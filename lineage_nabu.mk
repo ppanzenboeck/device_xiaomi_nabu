@@ -19,6 +19,8 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
+DEVICE_CODENAME := nabu
+
 # Signing keys (Private).
 ifneq ("$(wildcard vendor/harshit/product.mk)", "")
 $(call inherit-product, vendor/harshit/product.mk)
@@ -27,7 +29,7 @@ endif
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
-PRODUCT_NAME := lineage_nabu
+PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 PRODUCT_DEVICE := nabu
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
@@ -36,6 +38,6 @@ PRODUCT_MODEL := Xiaomi Pad 5
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="nabu_global-user 13 RKQ1.200826.002 V816.0.1.0.TKXMIXM release-keys"
-
-BUILD_FINGERPRINT := Xiaomi/nabu_global/nabu:13/RKQ1.200826.002/V816.0.1.0.TKXMIXM:user/release-keys
+    BuildDesc="nabu_global-user 13 RKQ1.200826.002 V816.0.1.0.TKXMIXM release-keys" \
+    BuildFingerprint=Xiaomi/nabu_global/nabu:13/RKQ1.200826.002/V816.0.1.0.TKXMIXM:user/release-keys \
+    DeviceProduct=$(DEVICE_CODENAME)
