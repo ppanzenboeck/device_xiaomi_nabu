@@ -16,6 +16,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
