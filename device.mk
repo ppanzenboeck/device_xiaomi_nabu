@@ -21,6 +21,10 @@ $(warning Enabling Viper4Android audio effect.)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 endif
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
