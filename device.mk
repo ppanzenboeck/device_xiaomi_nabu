@@ -24,6 +24,10 @@ endif
 # Symlinks
 $(call inherit-product, device/xiaomi/nabu/symlink/targets.mk)
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
