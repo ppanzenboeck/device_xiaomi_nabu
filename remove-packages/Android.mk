@@ -60,6 +60,8 @@ LOCAL_OVERRIDES_PACKAGES += \
     Drive \
     PersonalSafety \
     Messages \
+    GoogleDialer \
+    AndroidAutoStub \
     Accord \
     FossifyGallery
 
