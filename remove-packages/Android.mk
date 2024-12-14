@@ -63,6 +63,7 @@ LOCAL_OVERRIDES_PACKAGES += \
     GoogleDialer \
     AndroidAutoStub \
     Accord \
+    MotoDolbyDax3 \
     FossifyGallery
 
 LOCAL_UNINSTALLABLE_MODULE := true
