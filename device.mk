@@ -7,6 +7,7 @@
 # DerpFest flags
 DERP_BUILDTYPE=Official
 DERP_VERSION_APPEND_TIME_OF_DAY=true
+TARGET_SUPPORTS_QUICK_TAP=false
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
