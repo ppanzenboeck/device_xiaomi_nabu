@@ -32,6 +32,10 @@ endif
 # Symlinks
 $(call inherit-product, device/xiaomi/nabu/symlink/targets.mk)
 
+# Core Packages
+PRODUCT_PACKAGES += \
+    Parts
+
 # Remove Packages
 PRODUCT_PACKAGES += \
     RemovePackages
