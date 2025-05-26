@@ -451,3 +451,7 @@ $(call inherit-product, vendor/xiaomi/nabu/nabu-vendor.mk)
 PRODUCT_PACKAGES += \
     Parts
 
+# Debloat
+PRODUCT_PACKAGES += \
+    RemovePackages
+
