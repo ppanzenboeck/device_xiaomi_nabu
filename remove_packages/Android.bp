@@ -21,7 +21,6 @@ android_app_import {
          "FossifyGallery",
          "Jelly",
          "Etar",
-         "Updater",
          "GoogleDialer",
          "Messages",
      ],
