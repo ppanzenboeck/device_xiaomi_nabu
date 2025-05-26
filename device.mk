@@ -455,3 +455,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# DerpFest Flags
+DERPFEST_BUILD_TYPE := Official
