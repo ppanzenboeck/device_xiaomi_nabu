@@ -42,3 +42,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="nabu_global-user 13 RKQ1.200826.002 V816.0.1.0.TKXMIXM release-keys" \
     BuildFingerprint=Xiaomi/nabu_global/nabu:13/RKQ1.200826.002/V816.0.1.0.TKXMIXM:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
+
+TARGET_DISABLE_EPPE := true
