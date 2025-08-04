@@ -23,6 +23,8 @@ android_app_import {
          "Etar",
          "GoogleDialer",
          "Messages",
+         "DeskClockGoogle",
+         "Gemini",
      ],
  	dex_preopt: {
  		enabled: false,
