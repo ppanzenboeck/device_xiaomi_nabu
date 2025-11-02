@@ -455,10 +455,6 @@ $(call inherit-product, vendor/xiaomi/nabu/nabu-vendor.mk)
 # Recovery
 $(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 
-# Core Packages
-PRODUCT_PACKAGES += \
-    Parts
-
 # Debloat
 PRODUCT_PACKAGES += \
     RemovePackages

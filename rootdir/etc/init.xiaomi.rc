@@ -10,10 +10,3 @@ on boot
     chown system system /sys/class/drm/card0-DSI-1/panel_info
     chmod 0744 /sys/class/drm/card0-DSI-1/panel_info
     chmod 0666 /dev/input/event2
-    
-    # Parts
-    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
-    chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
-
-    chown system system /sys/class/thermal/thermal_zone78/temp
-    chmod 0660 /sys/class/thermal/thermal_zone78/temp
