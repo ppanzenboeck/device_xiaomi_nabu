@@ -459,6 +459,9 @@ $(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# GameBar Performance Overlay
+$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
 # DerpFest Flags
 DERPFEST_BUILD_TYPE := Official
 TARGET_SUPPORTS_QUICK_TAP := false

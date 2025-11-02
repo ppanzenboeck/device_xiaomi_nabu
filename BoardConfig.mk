@@ -199,3 +199,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
 include vendor/xiaomi/nabu/BoardConfigVendor.mk
+
+# Required for GameBar. Todo inherit fix.
+SELINUX_IGNORE_NEVERALLOWS := true
