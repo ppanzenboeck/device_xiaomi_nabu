@@ -22,6 +22,8 @@ android_app_import {
          "Jelly",
          "Etar",
          "Gemini",
+         "GoogleDialer",
+         "PrebuiltBugle",
      ],
  	dex_preopt: {
  		enabled: false,
